@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serein Wellness | Medical Aesthetics with Care and Integrity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#B8956A',
+                        'dark-gold': '#8B6F47',
+                        cream: '#F5F1E8',
+                        charcoal: '#2C2C2C',
+                        'light-gray': '#F9F7F4',
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        .animate-delay-300 {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+        
+        .animate-delay-600 {
+            animation-delay: 0.6s;
+            opacity: 0;
+        }
+        
+        .animate-delay-900 {
+            animation-delay: 0.9s;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="text-charcoal antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/98 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-6">
+            <div class="flex justify-between items-center">
+                <div class="text-xl md:text-2xl font-semibold text-dark-gold tracking-[0.2em] uppercase font-sans">
+                    Serein Wellness
+                </div>
+                <ul class="hidden md:flex gap-12 items-center font-sans">
+                    <li><a href="#about" class="text-charcoal hover:text-gold transition-colors text-sm tracking-wider uppercase">About</a></li>
+                    <li><a href="#treatments" class="text-charcoal hover:text-gold transition-colors text-sm tracking-wider uppercase">Treatments</a></li>
+                    <li><a href="#consultation" class="text-charcoal hover:text-gold transition-colors text-sm tracking-wider uppercase">Consultation</a></li>
+                    <li><a href="#faq" class="text-charcoal hover:text-gold transition-colors text-sm tracking-wider uppercase">FAQ</a></li>
+                    <li>
+                        <a href="#booking" class="bg-gold text-white px-8 py-3 rounded-sm hover:bg-dark-gold transition-all text-sm tracking-wider uppercase font-sans">
+                            Book Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen bg-gradient-to-br from-cream to-light-gray flex items-center justify-center relative overflow-hidden">
+        <div class="text-center z-10 max-w-4xl px-6">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-light text-dark-gold mb-6 tracking-[0.25em] animate-fade-in-up">
+                MEDICAL AESTHETICS WITH CARE AND INTEGRITY
+            </h1>
+            <p class="text-lg md:text-2xl lg:text-3xl text-charcoal mb-12 font-light tracking-wide animate-fade-in-up animate-delay-300">
+                Prescriber-led treatments focused on balance, safety and natural enhancement.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center animate-fade-in-up animate-delay-600">
+                <a href="#treatments" class="bg-gold text-white px-8 md:px-12 py-3 md:py-4 rounded-sm hover:bg-dark-gold transition-all text-sm tracking-[0.15em] uppercase font-sans">
+                    View Treatments
+                </a>
+                <a href="#booking" class="bg-transparent text-dark-gold border-2 border-gold px-8 md:px-12 py-3 md:py-4 rounded-sm hover:bg-gold hover:text-white transition-all text-sm tracking-[0.15em] uppercase font-sans">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light text-dark-gold mb-12 text-center tracking-[0.2em] uppercase">About</h2>
+            <div class="text-center space-y-8">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-gold font-normal tracking-wider">
+                    A safe, medical approach to subtle, natural results
+                </h3>
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed text-charcoal">
+                    Serein Wellness takes a thoughtful, evidence-based approach to aesthetic and wellness treatments. All procedures are carried out by a highly qualified medical professional who prioritises your safety, comfort and confidence.
+                </p>
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed text-charcoal">
+                    We believe in enhancing, not changing — helping you look and feel your best with results that remain natural and balanced.
+                </p>
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed text-charcoal">
+                    Every appointment begins with a consultation, ensuring the right treatment plan for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="treatments" class="py-32 px-6 bg-light-gray">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light text-dark-gold mb-12 text-center tracking-[0.2em] uppercase">Treatments</h2>
+            
+            <div class="max-w-4xl mx-auto mb-16 text-center">
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed text-charcoal">
+                    Every treatment at Serein Wellness begins with a medical consultation to ensure safety and suitability. All procedures are carried out by a qualified medical professional using high-quality, clinically approved products. Our focus is on natural results that leave you looking refreshed, confident, and comfortable in your own skin.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                <!-- Treatment Card 1 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Anti-Wrinkle Injections</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        Smooth lines and soften expression while maintaining natural movement. Used to reduce frown lines, forehead lines, and crow's feet for a rested, balanced look.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £130</p>
+                </div>
+
+                <!-- Treatment Card 2 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Dermal Fillers</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        Add gentle volume and definition to the lips or soften smile lines for a natural, refreshed appearance. Each treatment is tailored to your features to maintain balance and subtlety.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £150</p>
+                </div>
+
+                <!-- Treatment Card 3 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Skin Boosters</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        Deeply hydrating injectable treatments (such as Profhilo® or Seventy Hyal®) that improve skin tone, elasticity, and radiance. A subtle glow treatment ideal for tired or dehydrated skin.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £160</p>
+                </div>
+
+                <!-- Treatment Card 4 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Microneedling</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        A collagen-stimulating treatment that improves skin texture, tone, and fine lines by encouraging natural repair. Ideal for dull skin, acne scarring, and uneven texture.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £85</p>
+                </div>
+
+                <!-- Treatment Card 5 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Vitamin Injections</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        Targeted vitamin therapy designed to support energy, skin health, immunity, and overall wellbeing. Available options include Vitamin B12, Glutathione, Vitamin B7 (Biotin), Vitamin C, Vitamin D, NAD⁺, and a complete B-Complex blend.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £35</p>
+                </div>
+
+                <!-- Treatment Card 6 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Fat-Dissolving Injections</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        A non-surgical treatment that helps reduce small, stubborn areas of fat to gently contour and define the body. Common treatment areas include the chin, neck, abdomen, upper arms, and sides.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £85 per session</p>
+                </div>
+
+                <!-- Treatment Card 7 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Dermaplaning</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        A gentle exfoliation technique that removes dead skin and fine hair, leaving skin smooth, bright, and refreshed. Perfect before events or as part of a regular skincare routine.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">From £60</p>
+                </div>
+
+                <!-- Treatment Card 8 -->
+                <div class="bg-white p-10 rounded-sm transition-all duration-300 border border-gold/10 hover:border-gold/30">
+                    <h3 class="text-xl md:text-2xl text-dark-gold mb-6 font-medium tracking-wide">Blood Tests</h3>
+                    <p class="text-base md:text-lg leading-relaxed mb-6 text-charcoal">
+                        Laboratory-grade testing for deeper insight into your health and wellbeing. Includes vitamin, mineral, and hormone panels with a confidential review and interpretation by a qualified medical professional.
+                    </p>
+                    <p class="text-lg md:text-xl text-gold font-semibold tracking-wide">Price on Application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="py-32 px-6 bg-cream">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light text-dark-gold mb-12 text-center tracking-[0.2em] uppercase">Consultations</h2>
+            
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h3 class="text-xl md:text-2xl lg:text-3xl text-dark-gold mb-8 font-normal tracking-wider">
+                    Every treatment begins with a consultation
+                </h3>
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed mb-6 text-charcoal">
+                    At Serein Wellness, every appointment starts with a private medical consultation. This is a legal requirement for all prescription-based aesthetic treatments and ensures every procedure is both safe and clinically appropriate.
+                </p>
+                <p class="text-base md:text-lg lg:text-xl leading-relaxed text-charcoal">
+                    Your consultation allows us to review your medical history, assess suitability, and design a plan tailored to your needs. It's an essential step in providing care that meets the highest medical standards.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
+                <div class="text-center">
+                    <h4 class="text-lg md:text-xl lg:text-2xl text-gold mb-4 font-medium">Listen & Assess</h4>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        We'll discuss your goals and review your medical background to ensure every treatment is safe and suitable.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-lg md:text-xl lg:text-2xl text-gold mb-4 font-medium">Plan & Advise</h4>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        You'll receive clear, honest guidance about your options and what to expect.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-lg md:text-xl lg:text-2xl text-gold mb-4 font-medium">Treat & Care</h4>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        If appropriate, treatment may be carried out during the same appointment.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-lg md:text-xl lg:text-2xl text-gold mb-4 font-medium">Aftercare & Follow-Up</h4>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        You'll receive personalised aftercare advice and ongoing support.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="#booking" class="inline-block bg-gold text-white px-8 md:px-12 py-3 md:py-4 rounded-sm hover:bg-dark-gold transition-all text-sm tracking-[0.15em] uppercase font-sans">
+                    Book a Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-32 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light text-dark-gold mb-20 text-center tracking-[0.2em] uppercase">Common Questions</h2>
+            
+            <div class="space-y-12">
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Do I need a consultation before treatment?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Yes. A medical consultation is required before any treatment — especially those involving prescription products. This ensures your safety, suitability, and an outcome that feels natural and balanced.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Who performs the treatments?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        All treatments are carried out by a qualified and insured medical professional with training in aesthetics.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Will my results look natural?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Yes. The approach at Serein Wellness is subtle and refined — designed to refresh, not change, your appearance.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Is there any downtime?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Most treatments involve little to no downtime. You may experience mild redness or swelling, which usually settles within a few hours or days depending on the procedure.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        How long do results last?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Results vary depending on the treatment and individual response. Your practitioner will discuss this during your consultation and create a personalised plan for maintenance.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Is my information kept confidential?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Always. All consultations and records are handled securely and in accordance with medical confidentiality standards.
+                    </p>
+                </div>
+
+                <div class="pb-12 border-b border-gold/20">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        What if I'm unsure which treatment is right for me?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        That's what the consultation is for. You'll receive clear, honest advice with no obligation to proceed — the goal is to find what's genuinely best for you.
+                    </p>
+                </div>
+
+                <div class="pb-12">
+                    <h3 class="text-2xl text-dark-gold mb-4 font-medium tracking-wide">
+                        Do you offer a prescribing service?
+                    </h3>
+                    <p class="text-lg leading-relaxed text-charcoal">
+                        Yes, we offer a prescribing service to both medical and non-medical aesthetic practitioners.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <a href="#booking" class="inline-block bg-gold text-white px-8 md:px-12 py-3 md:py-4 rounded-sm hover:bg-dark-gold transition-all text-sm tracking-[0.15em] uppercase font-sans">
+                    Book a Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-32 px-6 bg-light-gray">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-light text-dark-gold mb-12 tracking-[0.2em] uppercase">Book Your Consultation</h2>
+            
+            <p class="text-base md:text-lg lg:text-xl leading-relaxed mb-6 text-charcoal">
+                Serein Wellness operates on a private, appointment-only basis.
+            </p>
+            <p class="text-base md:text-lg lg:text-xl leading-relaxed mb-12 text-charcoal">
+                If you'd like to arrange a consultation or have any questions about treatments, please get in touch using the details below. All enquiries are handled personally and in confidence.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-6 justify-center mb-12">
+                <a href="mailto:enquiries@sereinwellness.health" class="bg-gold text-white px-8 md:px-12 py-3 md:py-4 rounded-sm hover:bg-dark-gold transition-all text-sm tracking-[0.15em] uppercase font-sans">
+                    Email Us
+                </a>
+                <!-- <a href="https://wa.me/" class="bg-gold text-white px-12 py-4 rounded-sm hover:bg-dark-gold transition-all hover:-translate-y-1 hover:shadow-2xl text-sm tracking-[0.15em] uppercase font-sans">
+                    WhatsApp
+                </a> -->
+            </div>
+
+            <p class="text-sm md:text-base lg:text-lg text-charcoal italic">
+                Appointments are available throughout the week, including some evenings and weekends.
+            </p>
+        </div>
+    </section>
+
+       <!-- Footer -->
+    <footer class="bg-charcoal text-cream py-16 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="text-2xl md:text-3xl font-semibold text-gold tracking-[0.25em] mb-8 uppercase font-sans">
+          Serein Wellness
+        </div>
+
+        <div class="text-sm md:text-base leading-relaxed mb-8 opacity-80 max-w-2xl mx-auto space-y-2">
+          <p>Fully insured with SJL Insurance</p>
+          <p>Treatments carried out by a qualified medical professional</p>
+          <p>Registered company in England &amp; Wales: Serein Wellness Ltd</p>
+        </div>
+
+        <div class="pt-8 border-t border-cream/20 opacity-80 text-sm">
+          <p>&copy; 2025 Serein Wellness. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+        
+        
